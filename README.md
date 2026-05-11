@@ -25,19 +25,10 @@
 תוך שימוש במכונה הווירטואלית REMnux (המצורפת למשימה 2), עברו לנתיב:
 `/home/ubuntu/Desktop/tasks/agenttesla/`.
 קובץ היעד שלנו נקרא **agenttesla.xlsm**. הריצו את הפקודה: `oledump.py agenttesla.xlsm`.
+<img width="1857" height="789" alt="image" src="https://github.com/user-attachments/assets/c02de35c-de5a-4713-9ae8-6e25cdb4119b" />
 
 **הפלט בטרמינל:**
 
-```bash
-A: xl/vbaProject.bin
- A1:       468 'PROJECT'
- A2:        62 'PROJECTwm'
- A3: m     169 'VBA/Sheet1'
- A4: M     688 'VBA/ThisWorkbook'
- A5:         7 'VBA/_VBA_PROJECT'
- A6:       209 'VBA/dir'
-
-```
 
 בהתבסס על ניתוח הקובץ, נראה כי תסריט (Script) של VBA מוטמע במסמך ונמצא בתוך `xl/vbaProject.bin`. הכלי מקצה לזה את האינדקס **A** (זה עשוי להשתנות לפעמים). השילוב של האינדקס (A) ומספרים נקרא **זרמי נתונים (Data Streams)**.
 
