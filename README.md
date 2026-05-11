@@ -20,16 +20,7 @@
 
 **Oledump.py** הוא כלי מבוסס Python המנתח קובצי OLE2 (המכונים לעיתים Structured Storage או Compound File Binary Format). ראשי התיבות OLE מייצגים את הטכנולוגיה **Object Linking and Embedding** של מיקרוסופט. קובצי OLE2 משמשים בדרך כלל לאחסון סוגי נתונים מרובים, כגון מסמכים, גיליונות אלקטרוניים ומצגות, בתוך קובץ יחיד. כלי זה שימושי מאוד לחילוץ ובחינת התוכן של קובצי OLE2, מה שהופך אותו למשאב בעל ערך עבור ניתוח פורנזי וזיהוי נוזקות.
 
-### בואו נתחיל!
 
-תוך שימוש במכונה הווירטואלית REMnux (המצורפת למשימה 2), עברו לנתיב:
-`/home/ubuntu/Desktop/tasks/agenttesla/`.
-קובץ היעד שלנו נקרא **agenttesla.xlsm**. הריצו את הפקודה: `oledump.py agenttesla.xlsm`.
-<img width="1857" height="789" alt="image" src="https://github.com/user-attachments/assets/c02de35c-de5a-4713-9ae8-6e25cdb4119b" />
-
-
-
-הנה הסיכום המקצועי שלי לחדר **REMnux: Getting Started**, כתוב כולו בגוף ראשון מנקודת המבט שלי כאנליסט נוזקות, מוכן לשימוש ב-GitHub או בתיק העבודות שלך:
 
 ---
 
@@ -47,7 +38,7 @@
 
 * **הפקודה שהרצתי:** `oledump.py agenttesla.xlsm`
 * **הממצא המפליל:** בתוך "זרמי הנתונים" (Streams), זיהיתי מיד בסטרים מספר 4 את האות **'M'** הגדולה. עבורי, זהו ה"אקדח המעשן" – האות M מסמלת קיומו של **VBA Macro**. תוקפים משתמשים בזה כדי להריץ פקודות ברגע שהמשתמש מאשר את תוכן המסמך.
-
+<img width="1857" height="789" alt="image" src="https://github.com/user-attachments/assets/c02de35c-de5a-4713-9ae8-6e25cdb4119b" />
 ---
 
 ## 🔓 שלב 2: חילוץ ופענוח הקוד (Decompression)
